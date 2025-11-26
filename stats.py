@@ -11,4 +11,9 @@ def get_char_count(book_text):
         else:
             char_count[ch] = 1
     return char_count
-        
+
+def get_sorted_list(char_count):
+    dict_list = []
+    for ch in char_count:
+        dict_list.append({"char": ch, "num": char_count[ch]})
+    return dict_list
